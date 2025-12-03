@@ -53,9 +53,9 @@ src/
 ├── service/        # Business logic / Services (BookingService, BusService, AuthService)
 ├── util/           # Utilities (DBConnection.java, ValidationUtils.java)
 └── main/           # Main app & menu handlers (Main.java, AdminMenu.java, ManagerMenu.java)
-
+```
 ## 🗃️ ER Diagram (Conceptual)
-
+```
 +----------------+ +------------------+
 | bus_details | | booking_details |
 |----------------| |------------------|
@@ -69,6 +69,7 @@ src/
 +------------------+
 
 ---
+```
 
 ## ⚙️ How to Run the Project
 
