@@ -1,46 +1,53 @@
-# Bus-Management-Reservation-System-Java-MySQL-
-Bus Management &amp; Reservation System is a Java console application using MySQL to manage buses, schedules, and passenger bookings. It supports role-based login for Admin and Manager, secure data handling, seat availability checks, and smooth booking operations through JDBC and validated user inputs.
-🚍 Features Overview
-🔐 Role-Based Access
+# Bus Management & Reservation System (Java & MySQL)
 
-Admin Login
+A complete console-based Bus Reservation & Management System built using **Java, JDBC, and MySQL**.  
+It provides secure role-based login, bus management, and ticket booking with clean architecture and validated database operations.
 
-Manager Login
+---
 
-Each role has separate functionalities
+## 🏷️ Badges
+![Java](https://img.shields.io/badge/Java-17-orange)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
+![JDBC](https://img.shields.io/badge/JDBC-Connector-yellow)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-Secure login using database validation
+---
 
-🚌 Bus Management
+## 🚍 Features
 
-Add bus details
+### 🔐 Role-Based Login
+- Admin login  
+- Manager login  
+- Secure credential validation via MySQL DB
 
-Update bus info
+### 🚌 Bus Management
+- Add new bus  
+- Update bus details  
+- Delete bus  
+- View all buses  
+- Manage routes, timings, and seats  
 
-Delete bus
+### 🎫 Ticket Reservation
+- Book tickets  
+- Check seat availability  
+- Cancel bookings  
+- Generate unique Booking IDs  
+- Manage passenger details  
 
-View all buses
+### 💽 Database Integration
+- MySQL + JDBC  
+- DAO design pattern  
+- Prevents SQL injection using PreparedStatements  
+- Validations & exception handling  
 
-Manage routes and schedules
+---
 
-🎫 Reservation System
+## 🧱 Project Structure
 
-Book tickets
-
-Check seat availability
-
-Cancel bookings
-
-View passenger booking history
-
-Auto-generate Booking IDs
-
-💽 Database Operations
-
-Uses MySQL + JDBC
-
-DAO design pattern
-
-Prepared statements to avoid SQL injection
-
-Clean error handling
+src/
+├── dao/ # CRUD operations for each entity
+├── model/ # POJO classes (Bus, Manager, Passenger, Booking)
+├── service/ # Business logic layer
+├── util/ # DB connection + helpers
+└── main/ # Main program & menu handlers
