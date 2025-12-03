@@ -123,6 +123,7 @@ Connection con = DriverManager.getConnection(
     "root",
     "yourpassword"
 );
+```
 
 6️⃣ Run Main Class
 
@@ -172,12 +173,3 @@ This project is licensed under the MIT License.
 If you found this helpful, consider giving the repository a star ⭐.
 
 
----
-
-If you want, I can also add:
-
-🔥 Real diagrams (flowchart / class diagram)  
-🔥 A professional project banner image  
-🔥 A GitHub Actions CI badge  
-
-Just say *“add diagrams”* or *“add banner”*.
