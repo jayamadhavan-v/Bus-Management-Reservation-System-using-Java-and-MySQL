@@ -73,7 +73,7 @@ src/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+https://github.com/jayamadhavan-v/Bus-Management-Reservation-System-using-Java-and-MySQL
 
 2️⃣ Import into IntelliJ IDEA / Eclipse
 3️⃣ Add MySQL JDBC Driver
