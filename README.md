@@ -56,17 +56,15 @@ src/
 ```
 ## 🗃️ ER Diagram (Conceptual)
 ```
-+----------------+ +------------------+
-| bus_details | | booking_details |
-|----------------| |------------------|
-| bus_id (PK) | 1 * | booking_id (PK) |
-| bus_name | ------ | bus_id (FK) |
-| route | | passenger_id(FK) |
-| timing | | seat_no |
-| total_seats | +------------------+
-+----------------+
-
-+------------------+
++------------------+        +--------------------+        +----------------------+
+|   bus_details    | 1    * |   booking_details  | *    1 |  passenger_details   |
+|------------------|--------|--------------------|--------|----------------------|
+| bus_id (PK)      |        | booking_id (PK)    |        | passenger_id (PK)    |
+| bus_name         |        | bus_id (FK)        |        | name                 |
+| route            |        | passenger_id (FK)  |        | age                  |
+| timing           |        | seat_no            |        | mobile               |
+| total_seats      |        | booking_date       |        +----------------------+
++------------------+        +--------------------+
 
 ---
 ```
