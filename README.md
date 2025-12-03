@@ -42,17 +42,17 @@ It provides secure role-based login, bus management, and ticket booking with cle
 - Validations & exception handling  
 
 ---
+## 📁 Project Structure
 
-## 🧱 Project Structure
+Use this tree in README to show folders and responsibilities:
 
+```text
 src/
-├── dao/ # CRUD operations for each entity
-├── model/ # POJO classes (Bus, Manager, Passenger, Booking)
-├── service/ # Business logic layer
-├── util/ # DB connection + helpers
-└── main/ # Main program & menu handlers
-
----
+├── dao/            # CRUD operations for each entity (BusDAO, BookingDAO, PassengerDAO, ManagerDAO)
+├── model/          # POJOs / Entity classes (Bus.java, Booking.java, Passenger.java, Manager.java)
+├── service/        # Business logic / Services (BookingService, BusService, AuthService)
+├── util/           # Utilities (DBConnection.java, ValidationUtils.java)
+└── main/           # Main app & menu handlers (Main.java, AdminMenu.java, ManagerMenu.java)
 
 ## 🗃️ ER Diagram (Conceptual)
 
